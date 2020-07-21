@@ -6,6 +6,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "./sleep.sh"
+    command = "./ibmcloudcli.sh"
   }
  }
