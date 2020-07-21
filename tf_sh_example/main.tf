@@ -1,8 +1,8 @@
 # Runs a shell script
 
 resource "null_resource" "sleep" {
-  triggers {
-    uuid = "${uuid()}"
+  triggers = {
+    uuid = uuid()
   }
 
   provisioner "local-exec" {
