@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "checking ob plugin"
-ibmcloud ob
+kubectl version
 sleep 10
 
