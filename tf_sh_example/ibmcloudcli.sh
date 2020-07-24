@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "checking ob plugin"
-ibmcloud cs
+ibmcloud ob
 sleep 10
 
