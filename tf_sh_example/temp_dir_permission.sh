@@ -30,3 +30,13 @@ if [ $? -ne 0 ] ; then
   exit 1
 fi
 echo "PASSED: appuser is able to read a file"
+
+touch /tmp/testDirRename/a.sh
+chmod +x /tmp/testDirRename/a.sh
+cd /tmp/testDirRename
+./a.sh
+if [ $? -ne 0 ] ; then
+  echo "FAILED: appuser is not able to execute a shell script"
+  exit 1
+fi
+ echo "PASSED: appuser is able to execute a shell script"
