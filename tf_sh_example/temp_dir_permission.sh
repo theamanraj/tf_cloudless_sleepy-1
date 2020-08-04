@@ -9,6 +9,7 @@ if [ $? -ne 0 ] ; then
   exit 1
 fi
 echo "PASSED: appuser has write permission create a directory"
+exit 1
 
 mv /tmp/testDir /tmp/testDirRename
 if [ $? -ne 0 ] ; then
