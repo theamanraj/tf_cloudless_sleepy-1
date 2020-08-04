@@ -1,6 +1,6 @@
 #!/bin/bash
   
-
+echo "############################Testing Tmp dir ###########################"
 echo "Testing Temp Directory permissions"
 
 mkdir -p /tmp/testDir
