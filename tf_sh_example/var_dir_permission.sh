@@ -3,40 +3,35 @@
 
 echo "Testing Temp Directory permissions"
 
-mkdir -p /tmp/testDir
+mkdir -p /var/testDir
 if [ $? -ne 0 ] ; then
-  echo "FAILED: appuser is not able to create a directory"
-  exit 1
+  echo "FAILED: appuser has no write permission"
 fi
-echo "PASSED: appuser has write permission create a directory"
+echo "PASSED: appuser has write permission to create a directory/file"
 
-mv /tmp/testDir /tmp/testDirRename
+mv /var/testDir /var/testDirRename
 if [ $? -ne 0 ] ; then
-  echo "FAILED: appuser is not able to rename a directory"
-  exit 1
+  echo "FAILED: appuser can't rename a directory/file"
 fi
-echo "PASSED: appuser is able to rename a directory"
+echo "PASSED: appuser is able to rename a directory/file"
 
-touch /tmp/testDirRename/create.txt
+touch /var/testDirRename/create.txt
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser is not able to create a file"
-  exit 1
 fi
 echo "PASSED: appuser is able to create a file"
 
-cat /tmp/testDirRename/create.txt
+cat /var/testDirRename/create.txt
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser is not able to create a file"
-  exit 1
 fi
 echo "PASSED: appuser is able to read a file"
 
-touch /tmp/testDirRename/a.sh
-chmod +x /tmp/testDirRename/a.sh
-cd /tmp/testDirRename
+touch /var/testDirRename/a.sh
+chmod +x /var/testDirRename/a.sh
+cd /var/testDirRename
 ./a.sh
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser is not able to execute a shell script"
-  exit 1
 fi
  echo "PASSED: appuser is able to execute a shell script"
