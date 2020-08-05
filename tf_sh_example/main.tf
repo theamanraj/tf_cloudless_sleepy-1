@@ -2,7 +2,7 @@
 
 resource "null_resource" "sleep" {
   triggers = {
-    uuid = uuid()
+    uuid = "${uuid()}"
   }
 
   provisioner "local-exec" {
