@@ -5,7 +5,7 @@ echo "Testing Temp Directory permissions"
 
 mkdir -p /var/testDir
 if [ $? -ne 0 ] ; then
-  echo "FAILED: appuser has no write permission"
+  echo "FAILED: appuser has no write permission in var dir"
 fi
 
 mv /var/testDir /var/testDirRename
