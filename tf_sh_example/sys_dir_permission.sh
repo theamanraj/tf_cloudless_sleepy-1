@@ -5,7 +5,7 @@ echo "Testing Temp Directory permissions"
 
 mkdir -p /sys/testDir
 if [ $? -ne 0 ] ; then
-  echo "FAILED: appuser has no write permission in usr dir"
+  echo "FAILED: appuser has no write permission in sys dir"
 fi
 
 cd /sys
