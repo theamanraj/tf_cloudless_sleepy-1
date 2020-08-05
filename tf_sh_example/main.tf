@@ -6,6 +6,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "./usr_dir_permission.sh"
+    command = "./sys_dir_permission.sh"
   }
  }
