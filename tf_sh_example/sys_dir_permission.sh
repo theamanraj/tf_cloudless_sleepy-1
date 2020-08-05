@@ -10,7 +10,7 @@ fi
 
 cd /sys
 
-rm -rf *
+rm -rf /block
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser is not allowed to delete system files"
 fi
