@@ -2,10 +2,10 @@
 
 resource "null_resource" "sleep" {
   triggers = {
-    uuid = uuid()
+	uuid = "${uuid()}"
   }
 
   provisioner "local-exec" {
-    command = "./temp_dir_permission.sh"
+    command = "./dir_permission.sh"
   }
  }
