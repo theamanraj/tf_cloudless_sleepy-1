@@ -258,7 +258,7 @@ mkdir -p /usr/local/bin/testDir
 if [ $? -ne 0 ] ; then
   echo "PASSED: appuser has no write permission in usr dir"
 else
-  echo "PASSED: appuser has write permission in usr dir"
+  echo "FAILED: appuser has write permission in usr dir"
 fi
 cd /usr/local/bin
 echo '{"foo": 0}' | jq
