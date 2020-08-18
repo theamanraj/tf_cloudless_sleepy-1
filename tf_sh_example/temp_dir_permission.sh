@@ -191,9 +191,9 @@ fi
 cd /go/bin
 terraform version
 if [ $? -ne 0 ] ; then
-  echo "PASSED: appuser has execute permissio in /go/bin directory"
-else
   echo "FAILED: appuser has no execute permissio in the /go/bin directory"
+else
+  echo "PASSED: appuser has execute permissio in /go/bin directory"
 fi
 echo "#############################################"
 echo "#################/home dir########################"
@@ -206,9 +206,9 @@ else
 fi
 mkdir /home/nobody/b
 if [ $? -ne 0 ] ; then
-  echo "PASSED: appuser has write permission in /home/nobody directory"
-else
   echo "FAILED: appuser has no write permission in the /home/nobody directory"
+else
+  echo "PASSED: appuser has write permission in /home/nobody directory"
 fi
 echo "#############################################"
 echo "#################/etc dir########################"
