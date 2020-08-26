@@ -204,7 +204,8 @@ if [ $? -ne 0 ] ; then
 else
   echo "FAILED: appuser has write permission in the /home directory"
 fi
-mkdir /home/nobody/b
+cd /home/nobody
+mkdir b
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser has no write permission in the /home/nobody directory"
 else
