@@ -204,13 +204,13 @@ if [ $? -ne 0 ] ; then
 else
   echo "FAILED: appuser has write permission in the /home directory"
 fi
-echo "mkdir -p /home/nobody/a"
-mkdir -p /home/nobody/a
-if [ $? -ne 0 ] ; then
-  echo "FAILED: appuser has no write permission in the /home/nobody directory"
-else
-  echo "PASSED: appuser has write permission in /home/nobody directory"
-fi
+# echo "mkdir -p /home/nobody/a"
+# mkdir -p /home/nobody/a
+# if [ $? -ne 0 ] ; then
+#   echo "FAILED: appuser has no write permission in the /home/nobody directory"
+# else
+#   echo "PASSED: appuser has write permission in /home/nobody directory"
+# fi
 echo "#############################################"
 echo "#################/etc dir########################"
 cd /etc
