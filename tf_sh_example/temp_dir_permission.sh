@@ -189,11 +189,11 @@ else
   echo "FAILED: appuser has write permission in the /go directory"
 fi
 cd /go/bin
-terraform version
+go version
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser has no execute permissio in the /go/bin directory"
 else
-  echo "PASSED: appuser has execute permissio in /go/bin directory"
+  echo "PASSED: appuser has execute permission in /go/bin directory"
 fi
 echo "#############################################"
 echo "#################/home dir########################"
@@ -204,6 +204,7 @@ if [ $? -ne 0 ] ; then
 else
   echo "FAILED: appuser has write permission in the /home directory"
 fi
+echo "mkdir -p /home/nobody/a"
 mkdir -p /home/nobody/a
 if [ $? -ne 0 ] ; then
   echo "FAILED: appuser has no write permission in the /home/nobody directory"
