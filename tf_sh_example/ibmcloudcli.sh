@@ -1,5 +1,7 @@
 #!/bin/bash
 whoami
+echo "checking dev plugin"
+ibmcloud dev
 echo "checking ob plugin"
 ibmcloud ob
 ibmcloud cs
