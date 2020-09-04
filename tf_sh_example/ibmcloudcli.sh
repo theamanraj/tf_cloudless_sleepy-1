@@ -11,21 +11,21 @@ ibmcloud cr
 echo "checking hpvs plugin"
 ibmcloud hpvs
 echo "checking analytics-engine plugin"
-ibmcloud analytics-engine
+ibmcloud ae
 echo "checking vpn plugin"
 ibmcloud vpn
 echo "checking activity-tracker plugin"
-ibmcloud activity-tracker
+ibmcloud at
 echo "checking machine-learning plugin"
-ibmcloud machine-learning
+ibmcloud ml
 echo "checking cloud-internet-services plugin"
-ibmcloud cloud-internet-services
+ibmcloud cis
 echo "checking dbaas-cli plugin"
-ibmcloud dbaas-cli
+ibmcloud dc
 echo "checking cloud-databases plugin"
-ibmcloud cloud-databases
+ibmcloud cd
 echo "checking key-protect plugin"
-ibmcloud key-protect
+ibmcloud kp
 echo "checking doi plugin"
 ibmcloud doi
 echo "checking tke plugin"
@@ -37,21 +37,19 @@ ibmcloud es
 echo "checking power-iaas plugin"
 ibmcloud pi
 echo "checking vpc-infrastructure plugin"
-ibmcloud vi
+ibmcloud is
 echo "checking code-engine plugin"
 ibmcloud ce
 echo "checking cloud-dns-services plugin"
 ibmcloud dns
 echo "checking dl-cli plugin"
-ibmcloud dc
+ibmcloud dl
 echo "checking watson plugin"
 ibmcloud watson
 echo "checking catalogs-management plugin"
-ibmcloud cm
+ibmcloud catalog
 echo "checking tg-cli plugin"
-ibmcloud tc
-echo "checking coligo plugin"
-ibmcloud cl
+ibmcloud tg
 kubectl version
 echo "kubectl version"
 terraform version
