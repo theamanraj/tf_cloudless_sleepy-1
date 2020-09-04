@@ -31,27 +31,27 @@ ibmcloud doi
 echo "checking tke plugin"
 ibmcloud tke
 echo "checking auto-scaling plugin"
-ibmcloud auto-scaling
+ibmcloud as
 echo "checking event-streams plugin"
-ibmcloud event-streams
+ibmcloud es
 echo "checking power-iaas plugin"
-ibmcloud power-iaas
+ibmcloud pi
 echo "checking vpc-infrastructure plugin"
-ibmcloud vpc-infrastructure
+ibmcloud vi
 echo "checking code-engine plugin"
-ibmcloud code-engine
+ibmcloud ce
 echo "checking cloud-dns-services plugin"
-ibmcloud cloud-dns-services
+ibmcloud dns
 echo "checking dl-cli plugin"
-ibmcloud dl-cli
+ibmcloud dc
 echo "checking watson plugin"
 ibmcloud watson
 echo "checking catalogs-management plugin"
-ibmcloud catalogs-management
+ibmcloud cm
 echo "checking tg-cli plugin"
-ibmcloud tg-cli
+ibmcloud tc
 echo "checking coligo plugin"
-ibmcloud coligo
+ibmcloud cl
 kubectl version
 echo "kubectl version"
 terraform version
