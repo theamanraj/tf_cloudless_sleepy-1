@@ -2,7 +2,7 @@
 whoami
 echo "checking ob plugin"
 ibmcloud ob
-ibmcloud cs
+ibmcloud sat host attach --location us-east
 
 
 ps aux
